@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing landing page</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+<script src="Script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="prcing_top_header">
+            <h1>PRICING</h1>
+            <div class="toggle">
+                <label for="billing-cycle" class="dropdown_billing"><strong>Billing:</strong></label>
+                <select id="billing-cycle" onchange="updatePricing()">
+                    <option value="monthly" >Monthly</option>
+                    <option value="yearly" >Yearly </option>
+                </select>
+                <label for="currency"><strong>Currency:</strong></label>
+                <select id="currency" onchange="updatePricing()">
+                    <option value="USD">$</option>
+                    <option value="EUR">€</option>
+                    <option value="INR">₹</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <div class="pricing_table">
+            <div class="pricing-plan">
+                <div class="pricing_card" id="card_1">
+                    <div class="pricing-header" id="basic_tittle">
+                        <h2 >Basic</h2>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>1 User</li>
+                            <li>10 GB Storage</li>
+                            <li>Basic Support</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        
+                        <span class="price" id="basic-price"></span>
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+                <div class="pricing_card" id="card_2">
+                    <div class="pricing-header" id="pro_tittle">
+                        <h2 >Professional</h2>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>5 Users</li>
+                            <li>50 GB Storage</li>
+                            <li>Priority Support</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        
+                        <span class="price" id="pro-price"></span>
+ 
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+                <div class="pricing_card" id="card_3">
+                    <div class="pricing-header" id="ent_tittle">
+                        <h2>Enterprise</h2>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>Unlimited Users</li>
+                            <li>1 TB Storage</li>
+                            <li>Dedicated Support</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                       
+                        <span class="price" id="adva-price"></span>
+
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

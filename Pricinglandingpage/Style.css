@@ -1,0 +1,130 @@
+/* Base styles provided by the user */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #c2bfbf;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-plan {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pricing-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pricing_card {
+    flex-basis: 22%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: aquamarine;
+}
+
+.pricing_card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.prcing_top_header {
+    text-align: center;
+}
+
+.pricing-header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+.pricing-header h2 {
+    margin: 0;
+}
+
+.pricing-features {
+    padding: 20px;
+}
+
+.pricing-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-features li {
+    padding: 10px;
+    color: #fff;
+    border-bottom: 1px solid #5a5353;
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+    
+}
+
+.pricing-footer {
+    background-color:#ebe7e7;
+    color:  #000000;
+    padding: 10px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.pricing-footer button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.pricing-footer button:hover {
+    background-color: #3e8e41;
+}
+#card_1{
+    background-color: #75a1f1;
+}
+#card_2{
+    background-color: rgb(255, 105, 105);
+}
+#card_3{
+    background-color: #060f1f;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .pricing-plan {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing_card {
+        flex-basis: 80%;
+    }
+}
